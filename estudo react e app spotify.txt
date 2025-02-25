@@ -1,0 +1,27 @@
+//rafce
+
+arrow function
+const app = () => <h1>Olá, mundo!</h1>
+
+- EXPORT DEFAULT, POSSO IMPORTAR COM QUALQUER NOME E SEM HAEVS
+export sem default, so posso importar entre chaves e com o nome exportado
+
+self closing tag
+<Header> </Header> ou <Header/>
+
+Nomeação de classes em CSS'
+Metodologia BEM
+BLOCKS ELEMENTS MODIFIERS
+bloco__elemento--modificador
+Header
+header__link
+header__link--small
+nomes compostos sao separados por hifen -
+
+
+Tag vazia em react se chama fragment <></>
+
+
+  height: 100vh; 
+  tela toda com o vh no CSS
+  e no mobile tem o svh
