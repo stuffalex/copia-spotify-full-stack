@@ -13,17 +13,21 @@ React.js
 
 
 ## 🎯 Como Rodar o Projeto
+
+### Clone o repositório
 ```
-# Clone o repositório
 git clone https://github.com/stuffalex/copia-spotify-full-stack.git
-
-# Acesse o diretório do projeto
+```
+### Acesse o diretório do projeto
+```
 cd nome-do-projeto
-
-# Instale as dependências
+```
+### Instale as dependências
+```
 npm install
-
-# Execute o projeto
+```
+### Execute o projeto
+```
 npm run dev
 ```
 O projeto estará disponível em http://localhost:5173/.
