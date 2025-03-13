@@ -26,14 +26,12 @@ const Song = () => {
   );
   const randomIdFromArtist = songsArrayFromArtist[randomIndex].id;
   const randomIdFromArtist2 = songsArrayFromArtist[randomIndex2].id;
+
   return (
     <div className="song">
       <div className="song__container">
         <div className="song__image-container">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e022774b00531d558bc19e12a24"
-            alt="imagem da musica x"
-          />
+          <img src={image} alt={`Imagem da musica ${name}`} />
         </div>
       </div>
 
@@ -42,7 +40,7 @@ const Song = () => {
           <img
             width={75}
             height={75}
-            src={image}
+            src={artistObj.image}
             alt={`imagem do artista ${artist}`}
           />
         </Link>

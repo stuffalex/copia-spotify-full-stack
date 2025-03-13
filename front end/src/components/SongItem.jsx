@@ -10,7 +10,7 @@ const SongItem = ({ image, name, duration, artist, audio, id, index }) => {
           <img
             className="song-item__image"
             src={image}
-            alt={`Imagem musica ${name}`}
+            alt={`Imagem da música ${name}`}
           />
           <p className="song-item__name">{name}</p>
         </div>
