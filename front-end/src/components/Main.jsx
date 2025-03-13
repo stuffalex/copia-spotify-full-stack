@@ -1,6 +1,6 @@
 import React from "react";
 import ItemList from "./ItemList";
-import { artistArray } from "../assets/database/artists";
+import { artistsArray } from "../assets/database/artists";
 import { songsArray } from "../assets/database/songs";
 const Main = ({ type }) => {
   return (
@@ -9,7 +9,7 @@ const Main = ({ type }) => {
         <ItemList
           title="Artistas"
           items={5}
-          itemsArray={artistArray}
+          itemsArray={artistsArray}
           path="/artists"
           idPath="/artist"
         />
