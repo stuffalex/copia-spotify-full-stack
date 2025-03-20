@@ -48,6 +48,7 @@ const Song = () => {
           duration={duration}
           randomIdFromArtist={randomIdFromArtist}
           randomIdFromArtist2={randomIdFromArtist2}
+          audio={audio}
         />
         <div>
           <p className="song__name">{name}</p>
