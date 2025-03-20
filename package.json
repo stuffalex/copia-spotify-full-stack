@@ -1,0 +1,21 @@
+{
+  "name": "copia-spotify-full-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i --prefix back-end && npm i --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuffalex/copia-spotify-full-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuffalex/copia-spotify-full-stack/issues"
+  },
+  "homepage": "https://github.com/stuffalex/copia-spotify-full-stack#readme",
+  "description": ""
+}
