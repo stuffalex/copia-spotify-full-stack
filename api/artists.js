@@ -1,7 +1,11 @@
 const { MongoClient } = require('mongodb');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://alexyavianaa:VhyGwQ4TvVNweXPQ@cluster0.m6cyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI;
 const DB_NAME = process.env.MONGODB_DB || 'spotifyAula';
+
+if (!MONGODB_URI) {
+  console.error('MONGODB_URI not set. Set it in Vercel project settings.');
+}
 
 let cachedClient = global._mongoClient;
 
@@ -17,6 +21,9 @@ module.exports = async function (req, res) {
   }
 
   try {
+    if (!MONGODB_URI) {
+      return res.status(500).json({ error: 'MONGODB_URI not configured on server' });
+    }
     await cachedClient.connect();
     const db = cachedClient.db(DB_NAME);
     const artists = await db.collection('artists').find({}).toArray();

@@ -1,10 +1,13 @@
 import { MongoClient } from 'mongodb';
 
-const URI = "mongodb+srv://alexyavianaa:VhyGwQ4TvVNweXPQ@cluster0.m6cyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.MONGODB_URI;
+if (!URI) {
+	throw new Error('MONGODB_URI environment variable is not defined. Set it in your environment or in Vercel project settings.');
+}
 
 const client = new MongoClient(URI);
 
-export const db = client.db("spotifyAula");
+export const db = client.db(process.env.MONGODB_DB || 'spotifyAula');
 // const songCollection = await db.collection('songs').find({}).toArray();
 
 // console.log(songCollection);
